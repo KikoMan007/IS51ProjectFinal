@@ -7,22 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainHeaderComponent implements OnInit {
 
-  firstName = 'Christina'
-  lastName = 'Rendon'
-  greeting = 'r1c1'
+  firstName = 'Christina';
+  lastName = 'Rendon';
+  greeting = 'r1c1';
   constructor() { }
 
   ngOnInit() {
   }
 
   showGreeting() {
-    //const row2 = document.getElementById("r1c2");
-    this.greeting = 'Hello' + ' ' + this.firstName + ' ' + this.lastName + '.'
+    // const row2 = document.getElementById("r1c2");
+    this.greeting = 'Hello' + ' ' + this.firstName + ' ' + this.lastName + '.';
 }
 
 resetGreeting () {
-    //const row2 = document.getElementById("r1c2");
-    this.greeting = 'r1c2'
+    // const row2 = document.getElementById("r1c2");
+    this.greeting = 'r1c2';
 }
 
 

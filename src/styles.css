@@ -8,26 +8,24 @@ html,
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #205F09
+    background-color: lightblue
 }
 
 .main-container {
     display: grid;
     height: 100%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 10fr;
 }
 
 .row-one,
 .row-two,
 .row-three {
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: 3fr 10fr 3fr;
     height: 100%;
 }
 
 .row-two {
-    background-color: #2EAD1D
-
     }
 
 .row-three {
@@ -35,5 +33,5 @@ body {
 
 .container-padding {
     margin: 10px;
-    border: dotted #836C46;
+    /* border: solid gray; */
 }
