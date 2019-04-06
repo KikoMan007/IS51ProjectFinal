@@ -1,3 +1,56 @@
-<p>
-  bond-growth works!
-</p>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Values as of: </span>
+  </div>
+  <input type="text" class="form-control" placeholder="Enter Date" aria-label="Enter" aria-describedby="basic-addon1">
+</div>
+
+<div class="dropdown">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Series: </span>
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      Choose
+    </a>
+  </div>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">EE Bonds</a>
+    <a class="dropdown-item" href="#">I Bonds</a>
+    <a class="dropdown-item" href="#">E Bonds</a>
+    <a class="dropdown-item" href="#">Annually</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Denomination: </span>
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      Choose
+    </a>
+  </div>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">$10</a>
+    <a class="dropdown-item" href="#">$25</a>
+    <a class="dropdown-item" href="#">$50</a>
+    <a class="dropdown-item" href="#">$100</a>
+    <a class="dropdown-item" href="#">$500</a>
+    <a class="dropdown-item" href="#">$1000</a>
+  </div>
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Bond Serial Number: </span>
+  </div>
+  <input type="text" class="form-control" placeholder="Enter" aria-label="Enter" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Issue Date: </span>
+  </div>
+  <input type="text" class="form-control" placeholder="Enter Date" aria-label="Enter" aria-describedby="basic-addon1">
+</div>
+
+<button type="button" class="btn btn-success" style="display: block; margin: 0 auto;">Calculate! </button>
