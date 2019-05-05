@@ -1,3 +1,29 @@
 .main-outlet {
     display: none;
 }
+
+.container-padding{
+    color: white;
+
+}
+
+.history {
+    text-align: center;
+    color: white;
+    border-style: solid;
+    border-color: gray;
+    margin: 5px;
+    border-width: 1px;
+    font-size: 18px;
+}
+
+.btn-group {
+    align-content: center;
+}
+
+.clear-history {
+    position: absolute;
+    right:    0;
+    bottom:   0;
+    margin: 5px;
+}
