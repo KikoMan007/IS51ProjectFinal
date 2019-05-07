@@ -26,9 +26,9 @@ export class InterestComponent implements OnInit {
     const rate = this.interestRate / 100;
     const base = this.principal * rate;
     console.log('base', base);
-    const exponent = 1 * this.time;
+    const exponent = (this.time);
     console.log('exponent', exponent);
-    this.totalInterest = Math.pow(base, exponent);
+    this.totalInterest = this.principal * Math.pow(base, exponent);
     console.log('total interest', this.totalInterest);
     this.endingBalance = this.principal + this.totalInterest;
     console.log('ending', this.endingBalance);
