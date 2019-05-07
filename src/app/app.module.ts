@@ -14,6 +14,8 @@ import { AppRoutes } from './app.routes';
 import { BondGrowthComponent } from './bond-growth/bond-growth.component';
 import { RuleSeventwoComponent } from './rule-seventwo/rule-seventwo.component';
 
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { RuleSeventwoComponent } from './rule-seventwo/rule-seventwo.component';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialDesignModule,
-    AppRoutes
+    AppRoutes,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

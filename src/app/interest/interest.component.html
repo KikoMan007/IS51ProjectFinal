@@ -2,14 +2,15 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Starting Amount: $</span>
   </div>
-  <input type="text" class="form-control" placeholder="Enter" aria-label="Enter" aria-describedby="basic-addon1">
+  <input [(ngModel)]="principal" type="number" class="form-control" placeholder="Enter" aria-label="Enter" aria-describedby="basic-addon1">
 </div>
+
 
 <div class="input-group mb-3">
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Years to Save: </span>
   </div>
-  <input type="text" class="form-control" placeholder="Enter" aria-label="Enter" aria-describedby="basic-addon1">
+  <input [(ngModel)]="time" type="number" class="form-control" placeholder="Enter" aria-label="Enter" aria-describedby="basic-addon1">
   <button type="button" class="btn btn-warning">Random</button>
 </div>
 
@@ -17,23 +18,23 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Interest Rate: %</span>
   </div>
-  <input type="text" class="form-control" placeholder="Enter" aria-label="Enter" aria-describedby="basic-addon1">
+  <input [(ngModel)]="interestRate" type="number" class="form-control" placeholder="Enter" aria-label="Enter" aria-describedby="basic-addon1">
 </div>
 
-<div class="input-group mb-3">
+<!-- <div class="input-group mb-3">
     <div class="input-group-prepend">
-      <span class="input-group-text" id="basic-addon1">Frequency: </span>
+      <span class="input-group-text" id="basic-addon1">Months: </span>
     </div>
-    <input type="text" class="form-control" placeholder="Enter" aria-label="Enter" aria-describedby="basic-addon1">
-  </div>
+    <input [(ngModel)]="period" type="text" class="form-control" placeholder="Enter" aria-label="Enter" aria-describedby="basic-addon1">
+  </div> -->
 
 
 <p class="calc-text">
-  Your money would be worth:
+  Your money would be worth: {{this.endingBalance}}
 </p>
 
 <div class="btn-group" class="row content-center" role="group" aria-label="Basic example">  
   <button type="button" class="btn btn-danger" style="display: block; margin: 0 auto;">Clear! </button>
-  <button type="button" class="btn btn-success" style="display: block; margin: 0 auto;">Calculate! </button>
+  <button type="button" class="btn btn-success" style="display: block; margin: 0 auto;" (click)="compoundInterest()">Calculate! </button>
   <button type="button" class="btn btn-primary" style="display: block; margin: 0 auto;">Save to History! </button>
 </div>
