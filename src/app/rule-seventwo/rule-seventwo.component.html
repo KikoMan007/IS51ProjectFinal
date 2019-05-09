@@ -1,23 +1,24 @@
-<p> Rule of 72 Formula: Years = 72 / rate OR Rate = 72 / years </p>
+<p> Rule of 72: Amount of Years to Double your Investment </p>
 <div class="input-group mb-3">
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Interest Rate: % </span>
   </div>
-  <input type="text" class="form-control" placeholder="Enter " aria-label="Enter" aria-describedby="basic-addon1">
+  <input type="number" class="form-control" placeholder="Enter " aria-label="Enter" aria-describedby="basic-addon1">
 </div>
 
 
 <p class="calc-text">
-  Estimate Based on Rule of 72:
+  Estimate:
 </p>
 
 
 <p class= "calc-text">
-  Precise Time to Double (Years):
+  Precise Time to Double (Years): {{this.endingBalance}}
+
 </p>
 
 <div class="btn-group" class="row content-center" role="group" aria-label="Basic example">  
     <button type="button" class="btn btn-danger" style="display: block; margin: 0 auto;">Clear! </button>
-  <button type="button" class="btn btn-success" style="display: block; margin: 0 auto;">Calculate! </button>
+  <button type="button" class="btn btn-success" style="display: block; margin: 0 auto;" (click)="seventyTwoRule()">Calculate! </button>
   <button type="button" class="btn btn-primary" style="display: block; margin: 0 auto;">Save to History! </button>
 </div>
